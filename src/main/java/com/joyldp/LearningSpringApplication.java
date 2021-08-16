@@ -66,7 +66,7 @@ public class LearningSpringApplication {
 			solver.init(puzzleState, outputFlag, queueFlag, verbosityFlag);
 			solver.start();
 			try {
-				solver.join(4000);
+				solver.join(500);
 			} catch (InterruptedException e) {
 				System.out.println("Request handler caught InterruptedException: " + e);
 			}
