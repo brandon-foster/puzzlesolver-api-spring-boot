@@ -40,7 +40,7 @@ public class LearningSpringApplication {
 	}
 
 	@RestController
-	@RequestMapping("/puzzle-is-solvable")
+	@RequestMapping("/psapi/puzzle-is-solvable")
 	public class PuzzleIsSolvableController {
 		@GetMapping
 		public Boolean isSolvable(@RequestParam(value="initial-state", required = true)String initialState) {
@@ -86,7 +86,7 @@ public class LearningSpringApplication {
 	}
 
 	@RestController
-	@RequestMapping("/puzzlesolver")
+	@RequestMapping("/psapi/puzzlesolver")
 	public class PuzzleSolverController {
 
 		@GetMapping
