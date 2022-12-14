@@ -12,6 +12,10 @@ See a web front end that uses this api: [puzzlesolver-frontend](https://joyldp.c
 
 ## Run
 
+### Build a Docker Image
+
+`docker build -t puzzlesolver-api-spring-boot .`
+
 ### Run as a Docker Container
 
 `docker run --rm --name psolver -p 4477:8080 puzzlesolver-api-spring-boot`
