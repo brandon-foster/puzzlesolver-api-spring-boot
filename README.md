@@ -12,6 +12,10 @@ See a web front end that uses this api: [puzzlesolver-frontend](https://joyldp.c
 
 ## Run
 
+### Install `dependencies/puzzlesolver-1.0.jar` into Local Repository
+
+`./mvnw install:install-file`
+
 ### Build a Docker Image
 
 `docker build -t puzzlesolver-api-spring-boot .`
