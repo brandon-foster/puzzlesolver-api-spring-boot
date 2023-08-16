@@ -16,6 +16,18 @@ See a web front end that uses this api: [puzzlesolver-frontend](https://joyldp.c
 
 `./mvnw install:install-file`
 
+### Run via the Spring Boot Maven Plugin
+
+`./mvnw spring-boot:run`
+
+### Package the Project
+
+`./mvnw clean package`
+
+### Run via Executable Jar
+
+`java -jar target/puzzlesolver-api-0.0.1-SNAPSHOT.jar`
+
 ### Build a Docker Image
 
 `docker build -t puzzlesolver-api-spring-boot .`
@@ -24,10 +36,6 @@ See a web front end that uses this api: [puzzlesolver-frontend](https://joyldp.c
 
 `docker run --rm --name psolver -p 4477:8080 puzzlesolver-api-spring-boot`
 
-### Run via the Spring Boot Maven Plugin
+### Convenience Script to Package Project and Build Docker Image
 
-`./mvnw spring-boot:run`
-
-### Run via Executable Jar
-
-`java -jar target/puzzlesolver-api-0.0.1-SNAPSHOT.jar`
+`./build.sh`
